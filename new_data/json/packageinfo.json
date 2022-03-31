@@ -1,0 +1,160 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://cssudii-data.pages.dev/new_data/json/packageinfo.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "version": "",
+            "files": [],
+            "support": {
+                "os": [],
+                "arch": []
+            },
+            "docker": {
+                "root": "",
+                "buildCommand": "",
+                "buildEnv": []
+            }
+        }
+    ],
+    "required": [
+        "version",
+        "files",
+        "support",
+        "docker"
+    ],
+    "properties": {
+        "version": {
+            "$id": "#/properties/version",
+            "type": "string",
+            "title": "The version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "files": {
+            "$id": "#/properties/files",
+            "type": "array",
+            "title": "The files schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/files/items"
+            }
+        },
+        "support": {
+            "$id": "#/properties/support",
+            "type": "object",
+            "title": "The support schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "os": [],
+                    "arch": []
+                }
+            ],
+            "required": [
+                "os",
+                "arch"
+            ],
+            "properties": {
+                "os": {
+                    "$id": "#/properties/support/properties/os",
+                    "type": "array",
+                    "title": "The os schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/support/properties/os/items"
+                    }
+                },
+                "arch": {
+                    "$id": "#/properties/support/properties/arch",
+                    "type": "array",
+                    "title": "The arch schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/support/properties/arch/items"
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "docker": {
+            "$id": "#/properties/docker",
+            "type": "object",
+            "title": "The docker schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "root": "",
+                    "buildCommand": "",
+                    "buildEnv": []
+                }
+            ],
+            "required": [
+                "root",
+                "buildCommand",
+                "buildEnv"
+            ],
+            "properties": {
+                "root": {
+                    "$id": "#/properties/docker/properties/root",
+                    "type": "string",
+                    "title": "The root schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "buildCommand": {
+                    "$id": "#/properties/docker/properties/buildCommand",
+                    "type": "string",
+                    "title": "The buildCommand schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "buildEnv": {
+                    "$id": "#/properties/docker/properties/buildEnv",
+                    "type": "array",
+                    "title": "The buildEnv schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/docker/properties/buildEnv/items"
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
