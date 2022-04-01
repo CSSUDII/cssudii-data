@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 7,
+    "description": "Better EN-US Resource Pack"
+  },
+  "language": {
+    "better_en_US": {
+      "name": "Better EU-US Language",
+      "region": "US",
+      "bidirectional": false
+    }
+  }
+}
